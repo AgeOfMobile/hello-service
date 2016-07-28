@@ -24,6 +24,10 @@ jar {
     version =  '1.0-SNAPSHOT'
 }
 
+task stage {
+    dependsOn build
+}
+
 task buildDocker(type: Docker, dependsOn: build) {
     applicationName = jar.baseName
     dockerfile = file('src/main/docker/Dockerfile')
