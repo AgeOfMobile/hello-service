@@ -11,8 +11,8 @@ RUN gradle build
 COPY ./build/libs/eureka-1.0-SNAPSHOT.jar /opt/app.jar
 
 # Cleaning up temp files
-RUN rm -rf /src
-RUN rm -rf /usr/local/gradle
+RUN rm -rf /src && \
+    rm -rf /usr/local/gradle
 
 ENV SERVER_PORT 8080
 
