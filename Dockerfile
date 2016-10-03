@@ -8,7 +8,7 @@ WORKDIR /src
 ENV GRADLE_USER_HOME=/src
 RUN gradle build
 
-RUN ls .
+RUN ls builds/libs/
 COPY build/libs/hello-service.jar /opt/app.jar
 
 # Cleaning up temp files
