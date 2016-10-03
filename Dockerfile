@@ -1,5 +1,7 @@
 FROM ageofmobile/gradle-docker:latest
 
+VOLUME /src
+
 ENV GRADLE_USER_HOME=/root
 
 RUN mkdir /src
