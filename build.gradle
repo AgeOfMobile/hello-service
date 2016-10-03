@@ -15,7 +15,7 @@ apply plugin: "io.spring.dependency-management"
 ext {
     name = 'Eureka Server'
     description = 'Eureka Server'
-    version='0.0.1-SNAPSHOT'
+    version = '0.0.1-SNAPSHOT'
     sourceEncoding='UTF-8'
 }
 
