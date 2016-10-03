@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class HelloController {
     @RequestMapping(value = "/hello/{name}", method = RequestMethod.GET)
     public @ResponseBody String sayHello(@PathVariable(value="name") String name) {
-        return "Hello, hello " + name;
+        return "Hello, " + name;
     }
 }
 
