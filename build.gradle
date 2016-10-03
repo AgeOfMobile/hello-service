@@ -20,10 +20,10 @@ ext {
     sourceEncoding='UTF-8'
 }
 
-// jar {
-//     baseName = 'eureka'
-//     version =  '1.0-SNAPSHOT'
-// }
+jar {
+    baseName = 'hello-service'
+    version =  '1.0'
+}
 
 // task stage {
 //     dependsOn build

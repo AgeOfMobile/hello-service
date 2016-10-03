@@ -9,7 +9,7 @@ ENV GRADLE_USER_HOME=/src
 RUN gradle build
 
 RUN ls build/libs/
-COPY build/libs/hello-service.jar /opt/app.jar
+COPY build/libs/hello-service-1.0.jar /opt/app.jar
 
 # Cleaning up temp files
 RUN rm -rf /src && \
