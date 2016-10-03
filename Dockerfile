@@ -6,9 +6,7 @@ RUN mkdir /src
 ADD . /src
 
 WORKDIR /src
-RUN echo "gradle build" > build.sh
-RUN chmod +x ./build.sh
-RUN ./build.sh
+RUN gradle build
 
 COPY build/libs/eureka-1.0-SNAPSHOT.jar /opt/app.jar
 
