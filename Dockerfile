@@ -1,5 +1,5 @@
 FROM ageofmobile/gradle-docker:latest
-ENV GRADLE_USER_HOME=/root
+ENV GRADLE_USER_HOME=/src
 
 VOLUME /src
 ADD . /src
