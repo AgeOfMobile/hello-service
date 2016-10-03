@@ -8,6 +8,9 @@ ADD . /src
 WORKDIR /src
 RUN gradle build
 
+RUN ls ./
+RUN ls ./build
+RUN ls ./build/libs
 COPY build/libs/eureka-1.0-SNAPSHOT.jar /opt/app.jar
 
 # Cleaning up temp files
