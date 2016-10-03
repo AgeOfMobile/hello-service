@@ -7,6 +7,7 @@ ADD . /src
 WORKDIR /src
 RUN gradle build
 
+RUN ls build/libs/
 COPY build/libs/hello-service.jar /opt/app.jar
 
 # Cleaning up temp files
