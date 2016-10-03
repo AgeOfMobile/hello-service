@@ -1,10 +1,11 @@
 FROM ageofmobile/gradle-docker:latest
-ENV GRADLE_USER_HOME=/src
 
-VOLUME /src
+RUN mkdir /src
 ADD . /src
 
 WORKDIR /src
+
+ENV GRADLE_USER_HOME=/src
 RUN gradle build
 
 RUN ls .
