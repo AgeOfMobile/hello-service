@@ -24,7 +24,7 @@ jar {
 
 repositories {
     maven {
-        url 'http://nexus.10.2.2.2.xip.io/repository/maven-central/'
+        url 'http://nexus.192.168.99.100.xip.io/repository/maven-central/'
     }
     mavenCentral()
 }
