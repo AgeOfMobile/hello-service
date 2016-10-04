@@ -1,5 +1,10 @@
 buildscript {
-    repositories { jcenter() }
+    repositories {
+        maven {
+            url 'http://nexus.192.168.99.100.xip.io/repository/maven-central/'
+        } 
+        jcenter() 
+    }
     dependencies {
         classpath "io.spring.gradle:dependency-management-plugin:0.5.6.RELEASE"
         classpath 'org.springframework.boot:spring-boot-gradle-plugin:latest.release'
